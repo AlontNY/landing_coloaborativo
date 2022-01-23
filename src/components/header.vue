@@ -38,11 +38,7 @@
 </template>
 
 <style scoped>
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
+
 .contenedor{
     width: 90%;
     max-width: 1280px;
@@ -75,6 +71,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: black;
+    font-family: 'Poppins', sans-serif;
 }
 header .contenedor-inicio {
  display: flex;
