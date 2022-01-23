@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderVue></HeaderVue>
+    <HeaderVue style="min-height:38vh;"></HeaderVue>
         <img alt="Vue logo" src="./assets/logo.png">
         <HelloWorld msg="Welcome to Your Vue.js App"/>
     <FooterVue></FooterVue>
