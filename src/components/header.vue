@@ -1,6 +1,6 @@
 <template>
     <div class="m-0 p-0">
-        <div class="p-5 bg-dark text-light">
+        <div class=" text-light">
            <header>
         <div class="menu">
             <div class="contenedor">
@@ -25,9 +25,9 @@
                     <h1>Premium Hosting Services</h1>
                     <p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae donec velit neque</p>
                     <a href="" class="boton">GET WEB HOSTING</a>
-                    <div class="imagen">
-                        <img src="~@/assets/imagenes/header.png" alt="">
-                    </div>
+                </div>
+                <div class="imagen">
+                    <img src="~@/assets/imagenes/header.png" alt="">
                 </div>
             </div>
         </div>
@@ -52,7 +52,7 @@ header{
     background-image: url(~@/assets/imagenes/ondas.png),linear-gradient(273deg, #46b3ff 0%, #0752fe 100%);
     background-repeat: no-repeat;
     background-position: bottom center;
-    height: 850px;
+    height: 890px;
 }
 .menu{
     background: white;
@@ -63,9 +63,10 @@ header{
     justify-content: space-around;
     align-items: center;
 }
-header.logo{
+header .logo{
     font-size: 23px;
     font-weight: bold;
+    color: black;
 }
 nav ul li{
     display: inline-block;
@@ -75,5 +76,38 @@ nav ul li a{
     text-decoration: none;
     color: black;
 }
+header .contenedor-inicio {
+ display: flex;
+ justify-content: space-between;
+ margin: 7vh 0;
+}
 
+header .titular, header .imagen {
+    width: 40%;
+}
+
+header h1{
+    font-family: 'rubik';
+    font-size: 52px;
+    color: #fff;
+    text-shadow: 1px 2px 50px #000;
+}
+header p{
+    color:#fff;
+    line-height: 30px;
+}
+header img{
+    width: 120%;
+}
+.boton{
+    background: #253547;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 20px 30 px 0 px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    display: inline-block;
+}
 </style>
