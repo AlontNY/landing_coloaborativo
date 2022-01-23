@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderVue style="min-height:38vh;"></HeaderVue>
+    <Dominios></Dominios>
     <FooterVue></FooterVue>
   </div>
 </template>
@@ -9,12 +10,13 @@
 
 import HeaderVue from './components/header.vue'
 import FooterVue from './components/footer.vue'
-
+import Dominios from './components/Dominios.vue'
 export default {
   name: 'App',
   components: {
     HeaderVue,
-    FooterVue
+    FooterVue,
+    Dominios
   }
 }
 </script>
