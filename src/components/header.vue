@@ -94,7 +94,7 @@ header p{
     line-height: 30px;
 }
 header img{
-    width: 120%;
+    width: 100%;
 }
 .boton{
     background: #253547;

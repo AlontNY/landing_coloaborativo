@@ -1,6 +1,6 @@
 <template>
  <div class="contenedor">
-     <div class="container">
+     
      <main>
         <ul class="dominios">
             <li><span class="punto">.</span><span class="dominio">com</span><span class="anio">$8.99/yr</span></li>
@@ -208,13 +208,102 @@
             </div>
          </div> 
     </section>
+
+    <section class="expert">
+        <div class="contenedor">
+            <h2>Talk With an Expert to Get Started Today!</h2>
+            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna dictum porta. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna dictum porta.</p>
+            <a href="">LIVE CHAT</a>
+        </div>
+    </section>
+    
+    <section class="easy">
+        <div class="contenedor">
+            <div class="imagen">
+                <img src="~@/assets/imagenes/easy.png" alt="">
+            </div>
+            <div class="titular">
+                <h2>EASY SETUP</h2>
+                <h3>One Click Installs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar libero eget enim imperdiet, et finibus tortor tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <div class="lista">
+                    <ul>
+                        <li><i class="fas fa-check"></i><p>Mauris dignissim viverra mauris non laoreet.</p></li>
+                        <li><i class="fas fa-check"></i><p>Mauris dignissim viverra mauris non laoreet.</p></li>
+                        <li><i class="fas fa-check"></i><p>Mauris dignissim viverra mauris non laoreet.</p></li>
+                        <li><i class="fas fa-check"></i><p>Mauris dignissim viverra mauris non laoreet.</p></li>
+                    </ul>
+                </div>
+                <a href="">ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios">
+        <div class="contenedor">
+            <div class="titular">
+                <h2>WHAT THEY’RE SAYING</h2>
+                <h3>Customer Testimonials</h3>
+            </div>
+           <div class="testimonio">
+               <div class="apartado">
+                    <img src="~@/assets/imagenes/testimonial.png" alt="">
+                    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+                    <p class="nombre_tes">Jane Smith</p>
+                    <p class="uno">Dev Lead, Divi Corner</p>
+                </div>
+                <div class="apartado">
+                    <img src="~@/assets/imagenes/testimonial.png" alt="">
+                    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+                    <p class="nombre_tes">Jane Smith</p>
+                    <p class="uno">Dev Lead, Divi Corner</p>
+                </div>
+                <div class="apartado">
+                    <img src="~@/assets/imagenes/testimonial.png" alt="">
+                    <p>Your content goes here. Edit or remove this text inline or in the module Content settings. You can also style every aspect of this content in the module Design settings and even apply custom CSS to this text in the module Advanced settings.</p>
+                    <p class="nombre_tes">Jane Smith</p>
+                    <p class="uno">Dev Lead, Divi Corner</p>
+                </div>
+           </div>
+        </div>
+    </section>
+
+    <section class="satisfaction">
+        <div class="contenedor">
+            <div class="titular">
+                <h3>Satisfaction Guaranteed</h3>
+            </div>
+            <div class="tarjetas">
+                <div class="tarjeta">
+                    <h4>24/7 Award Winning Support</h4>
+                    <p>Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada.</p>
+                    <a href="">CONTACT US</a>
+                </div>
+                <div class="tarjeta" id="tarjeta_2">
+                    <h4>24/7 Award Winning Support</h4>
+                    <p>Donec rutrum congue leo eget malesuada. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Donec sollicitudin molestie malesuada.</p>
+                    <a href="">CONTACT US</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="treinta">
+        <h2>30 Days of Free Hosting</h2>
+        <p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia</p>
+        <a href="">LEARN HOW</a>
+    </section>
     </div>
-</div>
 </template>
 
 <style scoped>
+/*.contenedor{
+    max-width: 1100px;
+    margin: auto;
+}*/
  .dominios{
      display:flex;
+     margin-left: 355px;
  }
  .dominios li{
      list-style: none;
@@ -236,22 +325,28 @@
  /*servicios*/
  #servicios{
      padding-top: 120px;
+     
  }
  #servicios .contenedor{
      display:flex;
-     justify-content: space-around;
+     justify-content: center;
+     max-width: 1550px;
+     margin: auto;
  }
  #servicios .titular{
+     font-family:'Poppins';
      width: 49%;
  }
- #servicios .servicios{
+ #servicios .servicios , .testimonios .apartado, .satisfaction .tarjeta{
+     margin-top: 30px;
+     margin-left: 20px;
      width:25%;
      background-color:#fff;
      box-shadow: 0px 90px 160px  0px rgba(0,0,0,0.1);
      border-radius:24px;
      padding: 20px 30px;
  }
- #servicios h2 , .pricing h2,  .file h2 {
+ #servicios h2 , .pricing h2,  .file h2 , .easy h2, .testimonios h2 {
      font-family: 'Rubik';
      font-weight: 500;
      font-size: 14px;
@@ -259,11 +354,11 @@
      letter-spacing: 1px;
      text-transform: uppercase;
  }
- #servicios h3 , .pricing h3 , .file h3{
+ #servicios h3 , .pricing h3 , .file h3, .easy h3, .testimonios h3{
      font-weight: 500px;
-     font-size: 30px;
+     font-size: 38px;
  }
- #servicios .boton , .file .boton {
+ #servicios .boton , .file .boton, .expert a, .easy a , .satisfaction a {
      background: #2970fa;
      padding: 15px 38px;
      letter-spacing: 1px;
@@ -293,6 +388,7 @@
  
  .servicios_2{
      margin-top: 60px;
+     
  }
  .servicios_2 #dos{
      position: relative;
@@ -314,7 +410,7 @@
     color:#ff8f00;
     letter-spacing: 1px;
 }
-#features h3{
+#features h3 , .satisfaction .titular h3{
     font-weight: bold;
     font-size: 38px;
     margin:0;
@@ -330,7 +426,7 @@
     padding-bottom: 40px;
     border-bottom:1px solid #cccccc40;
 }
-#features .titular {
+#features .titular  {
     width:40%;
     margin-right: 77px;
 }
@@ -370,7 +466,7 @@
 .pricing{
     padding-top: 90px;
 }
-.pricing h2, .pricing h3{
+.pricing h2, .pricing h3, .testimonios h2 , .testimonios h3, .satisfaction .titular h3{
     text-align: center;
 }
 .pricing h3{
@@ -379,6 +475,8 @@
 .contenedor-precios{
     display: flex;
     justify-content: space-around;
+    max-width: 1100px;
+    margin: auto;
 }
 .pricing .tabla{
     background: #fff;
@@ -481,64 +579,201 @@
     border-color: #2423232e;
 }
 
-     /* file*/
-     .file{
-         padding-top: 90px;
-     }
-    .file .contenedor {
+    /* file*/
+.file{
+    padding-top: 90px;
+}
+.file .contenedor, .easy .contenedor , .testimonios .testimonio ,.satisfaction .tarjetas {
+display: flex;
+justify-content: center;
+
+}
+.file .iconos .icono {
+    margin-right: 15px;
+}
+.file .iconos h4 ,.file .iconos p {
+    margin:0;
+}
+.file .iconos h4 {
+    font-weight: bold;
+}
+.file .iconos p {
+    margin-top: 10px;
+    color:#666;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 30px;
+    font-family: "poppins";
+}
+.file .item{
     display: flex;
-    justify-content: center;
+}
+.file .titular {
+    margin-right: 60px;
+    text-align: none;
+}
+/* el contenedor se le da un tamaño de 40 y la iamgen lo ocupara completo */
+.file .imagen , .easy .imagen{
+    width: 40%;
     
-    }
-    .file .iconos .icono {
-        margin-right: 15px;
-    }
-    .file .iconos h4 ,.file .iconos p {
-        margin:0;
-    }
-    .file .iconos h4 {
-        font-weight: bold;
-    }
-    .file .iconos p {
-        margin-top: 10px;
-        color:#666;
-        font-size: 14px;
-        margin-bottom: 30px;
-        line-height: 30px;
-        font-family: "poppins";
-    }
-    .file .item{
-        display: flex;
-    }
-    .file .titular{
-        width:51%;
-         margin-right: 60px;
-         text-align: none;
-    }
-    /* el contenedor se le da un tamaño de 40 y la iamgen lo ocupara completo */
-    .file .imagen{
-        width: 40%;
-       
-    }
-    .file .imagen  img {
+}
+.file .imagen  img , .easy .imagen img {
+ width: 100%;
+}
+.file .imagen .boton {
+    padding: 15px 40px;
+    font-family: 'Rubik';
+}
+.file h3 {
+    font-size: 34px;
+    width: 68%;
+    margin: 0;
+    margin-top: 15px;
+    font-weight: bold;
+    font-family:"poppins";
+}
+.file h2{
+    margin: 0;
+}
+.file .iconos{
+    margin-top: 30px;
+}
+/*expert */
+.expert{
+    padding: 196px 0;
     width: 100%;
-    }
-    .file .imagen .boton {
-        padding: 15px 40px;
-        font-family: 'Rubik';
-    }
-    .file h3 {
-        font-size: 34px;
-        width: 68%;
-        margin: 0;
-        margin-top: 15px;
-        font-weight: bold;
-        font-family:"poppins";
-    }
-    .file h2{
-        margin: 0;
-    }
-    .file .iconos{
-        margin-top: 30px;
-    }
+    background-image: url(~@/assets/imagenes/expert4.png), linear-gradient(150deg,#ffba61 0%, #ffe970 100%);
+    background-size: 1521px 975px;
+    background-position: 50% 50%;
+    text-align: center;
+}
+.expert h2 , .treinta h2{
+    font-family: 'Rubik';
+    font-size: 52px;
+    color:#fff;
+    text-shadow: 1px 2px 13px #61605d;
+    width: 50%;
+    margin: auto;
+}
+.expert p , .treinta p{
+    width: 50%;
+    margin:auto;
+    color: #fff;
+    margin-top: 30px;
+}
+.expert a{
+    padding: 15px 50px;
+    letter-spacing: 1px;
+}
+
+/*easy*/
+.easy{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.easy .titular{
+    width:40%;
+    margin: auto;
+    font-family: 'Poppins';
+}
+.easy .titular h3{
+    font-weight: bold;
+    margin: 0;
+}
+.easy .lista li {
+ display: flex;
+}
+.easy .titular ul{
+    padding: 0;
+    margin-bottom: 37px;
+    margin-top: 30px;
+}
+.easy p{
+    color: #666;
+    line-height: 30px;
+
+}
+.easy .lista p {
+    margin-left: 20px;
+    font-weight: bold;
+}
+.easy i {
+    background: #FF8F00;
+    color: #fff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+}
+.easy .contenedor{
+    width: 90%;
+    max-width: 1280px;
+    margin: auto;
+}
+/* testimonios*/
+.testimonios .apartado{
+    background-image: url(~@/assets/imagenes/testimonial-back.png);
+    background-repeat:no-repeat;
+    background-position: bottom;
+    background-position-x: right;
+}
+.testimonios, .satisfaction{
+    padding-bottom: 90px;
+}
+/*satifaction*/
+.satisfaction .tarjeta{
+    margin-left: 55px;
+}
+.satisfaction .tarjeta {
+    background-image:url(~@/assets/imagenes/tarjeta1.png), linear-gradient(
+    237deg, #46b3ff 0%, #0752fe 100%);
+       background-position: bottom left;
+    background-size: cover;
+    border-radius: 24px;
+    width: 40%;
+    padding:  27px 40px 26px 33px;
+}
+.satisfaction #tarjeta_2 {
+    background-image:url(~@/assets/imagenes/tarjeta2.png), linear-gradient(
+    150deg, #ffba61 0%, #ffdc71 100%);
+}
+.satisfaction h3{
+    font-weight: bold;
+    font-size: 38px;
+   }
+.satisfaction p{
+    color: #fff;
+    line-height: 34px;
+    margin: 0;
+}
+.satisfaction a , .treinta a{
+    background: #253547;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0px 20px 30 px 0 px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    display: inline-block;
+}
+/*treinta*/
+.treinta{
+    background-image: url(~@/assets/imagenes/30.png), linear-gradient(
+    237deg, #46b3ff 0%, #0752fe 100%);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 310px 0 155px 0;
+    text-align: center;
+}
+.treinta{
+    margin-top: 30px;
+    line-height: 30px;
+}
+.treinta a{
+    padding: 15px 50px;
+    letter-spacing: 1px;
+}
 </style>
