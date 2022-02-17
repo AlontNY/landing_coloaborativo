@@ -5,6 +5,8 @@
         <div class="menu">
             <div class="contenedor">
             <p class="logo">Hosting Company</p>
+            <!-- BARRA DE NAVEGACION PARA MOBIL -->
+            <img src="~@/assets/imagenes/menu.png"  class="menu-icon" alt="">
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
@@ -27,7 +29,7 @@
                     <a href="" class="boton">GET WEB HOSTING</a>
                 </div>
                 <div class="imagen">
-                    <img src="~@/assets/imagenes/header.png" alt="">
+                    <img src="~@/assets/imagenes/header.png" class="img2" alt="">
                 </div>
             </div>
         </div>
@@ -52,7 +54,12 @@ header{
 }
 .menu{
     background: white;
-    padding: 9px 20px;
+    padding: 11px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 1px 1px 8px #ccc;
+    z-index: 1;
 }
 .menu .contenedor{
     display: flex;
@@ -63,6 +70,7 @@ header .logo{
     font-size: 23px;
     font-weight: bold;
     color: black;
+    
 }
 nav ul li{
     display: inline-block;
@@ -93,7 +101,7 @@ header p{
     color:#fff;
     line-height: 30px;
 }
-header img{
+header img .img2 {
     width: 100%;
 }
 .boton{
@@ -103,8 +111,11 @@ header img{
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 14px;
-    box-shadow: 0px 20px 30 px 0 px rgba(0,0,0,0.2);
+    box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.2);
     margin-top: 20px;
     display: inline-block;
 }
+
+
+
 </style>
