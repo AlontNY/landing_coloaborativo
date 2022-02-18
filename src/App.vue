@@ -22,13 +22,6 @@ export default {
 </script>
 
 <style>
-@media screen and(max-width:490px){
-    nav{
-        position:absiluta;
-        top:100%;
-        left:0;
-        background: #232220;
-    }
-}
+
 
 </style>

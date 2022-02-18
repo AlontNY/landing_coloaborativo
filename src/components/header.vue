@@ -54,7 +54,7 @@ header{
 }
 .menu{
     background: white;
-    padding: 11px 20px;
+    padding: 15px 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -101,7 +101,7 @@ header p{
     color:#fff;
     line-height: 30px;
 }
-header img .img2 {
+header .imagen .img2 {
     width: 100%;
 }
 .boton{
@@ -116,6 +116,41 @@ header img .img2 {
     display: inline-block;
 }
 
-
+/*responsive*/
+@media screen and (max-width: 490px){
+    nav{
+        position:absolute;
+        top:100%;
+        left:0;
+        background: #232220;
+        width:100%;
+        display: none;
+    }
+    nav ul li {
+        display:block ;
+        margin:23px 20px;
+    }
+    nav ul li a {
+        color:#fff;
+    }
+    .menu-icon{
+        display: block;
+        position: absolute;
+        right: 31px;
+    }
+     header .contenedor-inicio{
+        flex-direction: column;
+        margin:8vh 0;
+    }  
+    header .titular , header .imagen{
+        width: 100% ;
+    }
+    header .imagen .img2 {
+        width: 79% ;
+    }
+    header h1{
+        font-size: 38px;
+    }
+}
 
 </style>

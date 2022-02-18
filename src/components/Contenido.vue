@@ -301,6 +301,81 @@
     max-width: 1100px;
     margin: auto;
 }*/
+ /*responsivo*/
+ @media screen and (max-width: 490px){
+ main .dominios {
+     margin-left: 0;
+     padding: 0;
+     max-width: 490px;
+     margin: auto;
+     
+ }
+ main .dominios li {
+     margin:0px 10px;   
+ }
+.dominios li span.dominio{
+    font-size:29px;
+}
+.dominios li span.anio{
+    font-size: 11px;
+}
+#servicios .contenedor{
+ flex-direction: column;
+}
+#servicios .contenedor .titular{
+width: 100%;
+padding: 0px 10px;
+}
+.contenedor #servicios #uno{
+margin-left: 20px;
+}
+.contenedor #servicios #dos{
+    top:0px;
+}
+.contenedor #servicios h3 , .contenedor .pricing h3 , .contenedor .file h3, .contenedor .easy h3, .contenedor .testimonios h3{
+     font-size: 36px;
+ }
+ .contenedor #servicios .servicios , .contenedor .testimonios .apartado, .contenedor .satisfaction .tarjeta {
+     width:91%;
+ }
+ .contenedor .file .contenedor, .contenedor .easy .contenedor ,.contenedor .testimonios .testimonio ,.contenedor .satisfaction .tarjetas{
+flex-direction: column;
+}
+.contenedor .satisfaction .tarjeta {
+    margin: 24px;
+}
+.contenedor-precios{
+    flex-direction: column;
+}
+.contenedor .file .imagen , .contenedor .easy .imagen{
+    width: 100%;
+    padding-bottom: 20%;
+}
+.contenedor .easy .titular{
+ padding-top: 20%;
+}
+.contenedor .expert{
+    padding: 56px 0;
+    background-position: 42% 50%;
+}
+.contenedor .file h3 {
+    width: 100%;
+}
+ #features .container .contenedor {
+flex-direction: column;
+}
+.contenedor #features .imagen{
+ width: 100%;
+}
+#features .container .contenedor .titular{
+width: 100%;
+margin-right: 0;
+}
+.pricing .contenedor-precios .tabla{
+    padding: 19px 145px;
+}
+ }
+ /**********/
  .dominios{
      display:flex;
      margin-left: 355px;
@@ -615,7 +690,6 @@ justify-content: center;
 /* el contenedor se le da un tamaño de 40 y la iamgen lo ocupara completo */
 .file .imagen , .easy .imagen{
     width: 40%;
-    
 }
 .file .imagen  img , .easy .imagen img {
  width: 100%;
