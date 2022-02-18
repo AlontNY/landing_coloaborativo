@@ -374,6 +374,15 @@ margin-right: 0;
 .pricing .contenedor-precios .tabla{
     padding: 19px 145px;
 }
+.container  .features-1 .features-2{
+flex-direction: column;
+}
+.container .feature{
+    width: 100%;
+}
+.easy .contenedor .titular{
+    width: 74%;
+}
  }
  /**********/
  .dominios{
