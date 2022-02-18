@@ -305,21 +305,22 @@
  /*responsivo*/
  @media screen and (max-width: 490px){
  main .dominios {
-     margin-left: 0;
-     padding: 0;
+    text-align: center;
      max-width: 490px;
      margin: auto;
+      flex-direction: column; 
      
  }
  main .dominios li {
-     margin:0px 10px;   
+     margin:0px 9px;  
+    
  }
-.dominios li span.dominio{
+/* .dominios li span.dominio{
     font-size:29px;
 }
 .dominios li span.anio{
-    font-size: 11px;
-}
+    font-size: 6px; */
+/* } */
 #servicios .contenedor{
  flex-direction: column;
 }
@@ -374,6 +375,7 @@ margin-right: 0;
 }
 .pricing .contenedor-precios .tabla{
     padding: 19px 145px;
+        margin: 20px;
 }
 .container  .features-1 .features-2{
 flex-direction: column;
