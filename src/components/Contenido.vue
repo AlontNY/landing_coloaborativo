@@ -108,7 +108,7 @@
       </div>
          </section>  
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         
         <div class="contenedor">
             <h2>PRICING</h2>
@@ -160,7 +160,7 @@
     </div>
     </section>
 
-    <section class="file">
+    <section class="file" id="file">
         <div class="container">
          <div class="contenedor">
             
@@ -239,7 +239,7 @@
         </div>
     </section>
 
-    <section class="testimonios">
+    <section class="testimonios" id="testimonios" >
         <div class="contenedor">
             <div class="titular">
                 <h2>WHAT THEY’RE SAYING</h2>
@@ -295,6 +295,7 @@
     </section>
     </div>
 </template>
+
 
 <style scoped>
 /*.contenedor{

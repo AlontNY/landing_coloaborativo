@@ -6,18 +6,21 @@
             <div class="contenedor">
             <p class="logo">Hosting Company</p>
             <!-- BARRA DE NAVEGACION PARA MOBIL -->
-            <img src="~@/assets/imagenes/menu.png"  class="menu-icon" alt="">
-                <nav>
+           
+            <img src="~@/assets/imagenes/menu.png" @click="show = !show" class="menu-icon" alt="">
+                
+                <nav v-show="show">
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Princing</a></li>
-                        <li><a href="">File Managment</a></li>
-                        <li><a href="">Testimonials</a></li>
+                        <li><a @click="show = !show" href=".menu">Home</a></li>
+                        <li><a @click="show = !show" href="#servicios">Services</a></li>
+                        <li><a @click="show = !show" href="#features">Features</a></li>
+                        <li><a @click="show = !show" href="#pricing">Princing</a></li>
+                        <li><a @click="show = !show" href="#file">File Managment</a></li>
+                        <li><a @click="show = !show" href="#testimonios">Testimonials</a></li>
                         
                     </ul>
                 </nav>
+             
             </div>
         </div>
         
@@ -38,6 +41,20 @@
     </div>
     
 </template>
+
+<script>
+
+export default {
+  
+  data(){
+    return{
+       show: false
+    }
+  }
+}
+</script>
+
+
 
 <style scoped>
 
@@ -124,7 +141,7 @@ header .imagen .img2 {
         left:0;
         background: #232220;
         width:100%;
-        display: none;
+        /* display: none; */
     }
     nav ul li {
         display:block ;
