@@ -1,42 +1,50 @@
 <template>
     <div class="m-0 p-0">
         <div class=" text-light">
-           <header>
-        <div class="menu">
-            <div class="contenedor">
-            <p class="logo">Hosting Company</p>
-            <!-- BARRA DE NAVEGACION PARA MOBIL -->
-           
-            <img src="~@/assets/imagenes/menu.png"   @click="mostrar()" class="menu-icon" alt="">
-                
-                <nav v-show="ver" id="nav">
-                    <ul class="lista" >
-                        <li><a  href="#menu">Home</a></li>
+        <header style="padding-top:6.1rem">
+            <div class="menu ">
+                <div class="contenedor">
+                <p class="logo p-0 m-0">Hosting Company</p>
+                <!-- BARRA DE NAVEGACION PARA MOBIL -->
+                <nav id="nav" class="viewPc">
+                    <ul class="lista mb-0 pl-0">
+                        <li><a @click="home()" href="#home"> Home </a></li>
                         <li><a  href="#servicios">Services</a></li>
                         <li><a  href="#features">Features</a></li>
                         <li><a  href="#pricing">Princing</a></li>
                         <li><a  href="#file">File Managment</a></li>
                         <li><a  href="#testimonios">Testimonials</a></li>
-                        
                     </ul>
                 </nav>
-             
-            </div>
-        </div>
-        
-        <div class="contenedor"  id="menu">
-            <div class="contenedor-inicio">
-                <div class="titular">
-                    <h1>Premium Hosting Services</h1>
-                    <p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae donec velit neque</p>
-                    <a href="" class="boton">GET WEB HOSTING</a>
+
+                <img src="~@/assets/imagenes/menu.png"   @click="mostrar()" class="menu-icon" alt=""> 
+                    <nav v-if="ver" id="nav" class="viewMobil"> <!-- -->
+                        <ul class="lista mb-0">
+                            <li><a @click="home(), ver=false" href="#menu">Home</a></li>
+                            <li><a @click="ver=false" href="#servicios">Services</a></li>
+                            <li><a @click="ver=false" href="#features">Features</a></li>
+                            <li><a @click="ver=false" href="#pricing">Princing</a></li>
+                            <li><a @click="ver=false" href="#file">File Managment</a></li>
+                            <li><a @click="ver=false" href="#testimonios">Testimonials</a></li>
+                        </ul>
+                    </nav>
+                
                 </div>
-                <div class="imagen">
-                    <img src="~@/assets/imagenes/header.png" class="img2" alt="">
+            </div>
+            
+            <div class="contenedor">
+                <div class="contenedor-inicio">
+                    <div class="titular">
+                        <h1>Premium Hosting Services</h1>
+                        <p>Donec sollicitudin molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae donec velit neque</p>
+                        <a href="" class="boton">GET WEB HOSTING</a>
+                    </div>
+                    <div class="imagen">
+                        <img src="~@/assets/imagenes/header.png" class="img2" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
         </div>
     </div>
     
@@ -46,10 +54,11 @@
 export default {
     data:function() {
         return {
-            ver:true
+            ver:false
         }
     },
     methods:{
+        home(){ return window.scrollTo(0, 0); },
         mostrar(){
             this.ver = !this.ver;
             console.log(this.ver);
@@ -75,7 +84,7 @@ header{
 }
 .menu{
     background: white;
-    padding: 15px 20px;
+    padding: .5rem 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -143,8 +152,14 @@ header .imagen .img2 {
     display: inline-block;
 }
 
+.viewMobil{ display: none; }
+.viewPc{ display: block;  }
+
 /*responsive*/
-@media screen and (max-width: 490px){
+@media screen and (max-width: 900px){
+    .viewMobil{ display: block; }
+    .viewPc{ display: none;  }
+
     nav{
         position:absolute;
         top:100%;
@@ -163,6 +178,7 @@ header .imagen .img2 {
         display:block ;
         margin:23px 20px;
     } */
+    nav ul li { padding: 1rem; }
     nav ul li a {
         color:#fff;
     }

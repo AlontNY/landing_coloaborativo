@@ -2,7 +2,7 @@
  <div class="contenedor">
      
      <main>
-        <ul class="dominios">
+        <ul class="dominios p-0">
             <li><span class="punto">.</span><span class="dominio">com</span><span class="anio">$8.99/yr</span></li>
             <li><span class="punto">.</span><span class="dominio">net</span><span class="anio">$8.99/yr</span></li>
             <li><span class="punto">.</span><span class="dominio">org</span><span class="anio">$8.99/yr</span></li>
@@ -303,89 +303,94 @@
     margin: auto;
 }*/
  /*responsivo*/
- @media screen and (max-width: 490px){
- main .dominios {
-    text-align: center;
-     max-width: 490px;
-     margin: auto;
-      flex-direction: column; 
-     
- }
- main .dominios li {
-     margin:0px 9px;  
-    
- }
-/* .dominios li span.dominio{
-    font-size:29px;
-}
-.dominios li span.anio{
-    font-size: 6px; */
-/* } */
-#servicios .contenedor{
- flex-direction: column;
-}
-#servicios .contenedor .titular{
-width: 100%;
-padding: 0px 10px;
-}
-.contenedor #servicios #uno{
-margin-left: 20px;
-}
-.contenedor #servicios #dos{
-    top:0px;
-}
-.contenedor #servicios h3 , .contenedor .pricing h3 , .contenedor .file h3, .contenedor .easy h3, .contenedor .testimonios h3{
-     font-size: 36px;
- }
- .contenedor #servicios .servicios , .contenedor .testimonios .apartado, .contenedor .satisfaction .tarjeta {
-     width:91%;
- }
- .contenedor .file .contenedor, .contenedor .easy .contenedor ,.contenedor .testimonios .testimonio ,.contenedor .satisfaction .tarjetas{
-flex-direction: column;
-}
-.contenedor .satisfaction .tarjeta {
-    margin: 24px;
-}
-.contenedor-precios{
-    flex-direction: column;
-}
-.contenedor .file .imagen , .contenedor .easy .imagen{
-    width: 100%;
-    padding-bottom: 20%;
-}
-.contenedor .easy .titular{
- padding-top: 20%;
-}
-.contenedor .expert{
-    padding: 56px 0;
-    background-position: 42% 50%;
-}
-.contenedor .file h3 {
-    width: 100%;
-}
- #features .container .contenedor {
-flex-direction: column;
-}
-.contenedor #features .imagen{
- width: 100%;
-}
-#features .container .contenedor .titular{
-width: 100%;
-margin-right: 0;
-}
-.pricing .contenedor-precios .tabla{
-    padding: 19px 145px;
-        margin: 20px;
-}
-.container  .features-1 .features-2{
-flex-direction: column;
-}
-.container .feature{
-    width: 100%;
-}
-.easy .contenedor .titular{
-    width: 74%;
-}
+ @media screen and (max-width: 900px){
+        main .dominios {
+            text-align: center;
+            max-width: 490px;
+            margin: auto;
+            flex-direction: column; 
+            
+        }
+        main .dominios li {
+            margin:0px 9px;  
+            
+        }
+        /* .dominios li span.dominio{
+            font-size:29px;
+        }
+        .dominios li span.anio{
+            font-size: 6px; */
+        /* } */
+        #servicios .contenedor{
+        flex-direction: column;
+        }
+        #servicios .contenedor .titular{
+        width: 100%;
+        padding: 0px 10px;
+        }
+        #servicios .contenedor .titular h3{ font-size:1.5rem; }
+
+        .contenedor #servicios #uno{
+        margin-left: 20px;
+        }
+        .contenedor #servicios #dos{
+            top:0px;
+        }
+        .contenedor #servicios h3 , .contenedor .pricing h3 , .contenedor .file h3, .contenedor .easy h3, .contenedor .testimonios h3{
+            font-size: 36px;
+        }
+        .contenedor #servicios .servicios , .contenedor .testimonios .apartado, .contenedor .satisfaction .tarjeta {
+            width:91%;
+        }
+        .contenedor .file .contenedor, .contenedor .easy .contenedor ,.contenedor .testimonios .testimonio ,.contenedor .satisfaction .tarjetas{
+        flex-direction: column;
+        }
+        .contenedor .satisfaction .tarjeta {
+            margin: 24px;
+        }
+        .contenedor-precios{
+            flex-direction: column;
+        }
+        .contenedor .file .imagen , .contenedor .easy .imagen{
+            width: 100%;
+            padding-bottom: 20%;
+        }
+        .contenedor .easy .titular{
+        padding-top: 20%;
+        }
+        .contenedor .expert{
+            padding: 56px 0;
+            background-position: 42% 50%;
+        }
+        .contenedor .file h3 {
+            width: 100%;
+        }
+        #features .container .contenedor {
+        flex-direction: column;
+        }
+        .contenedor #features .imagen{
+        width: 100%;
+        }
+        #features .container .contenedor .titular{
+        width: 100%;
+        margin-right: 0;
+        }
+        .pricing .contenedor-precios .tabla{
+            padding: 19px 145px;
+                margin: 20px;
+        }
+        .container  .features-1 .features-2{
+        flex-direction: column;
+        }
+        .container .feature{
+            width: 100%;
+        }
+        .easy .contenedor .titular{
+            width: 74%;
+        }
+
+        .expert .contenedor h2{ width: 100%; font-size: 45px; padding-top:2.5rem}
+        /* .expert .contenedor p, .treinta p { width: 90%; padding-bottom: 3rem; } */
  }
  /**********/
  .dominios{
@@ -411,8 +416,7 @@ flex-direction: column;
  }
  /*servicios*/
  #servicios{
-     padding-top: 120px;
-     
+     padding-top: 5rem;
  }
  #servicios .contenedor{
      display:flex;
@@ -596,10 +600,14 @@ flex-direction: column;
     color:#999;
     font-size: 18px;
 }
+
+.pricing .contenedor-precios .tabla{
+  padding: 19px 4rem;
+}
 .pricing .tabla .numero{
     font-family: 'Rubik';
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3rem;
     margin-left: 14px;
 }
 .pricing .mes{
@@ -741,6 +749,7 @@ justify-content: center;
     width: 50%;
     margin: auto;
 }
+
 .expert p , .treinta p{
     width: 50%;
     margin:auto;

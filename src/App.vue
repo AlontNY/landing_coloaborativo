@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderVue style="min-height:38vh;"></HeaderVue>
+    <HeaderVue></HeaderVue>
     <Contenido></Contenido>
     <FooterVue></FooterVue>
   </div>
