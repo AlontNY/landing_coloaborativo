@@ -202,7 +202,7 @@
                     </div>
                 </div>
                 <div class="imagen">
-                    <img src="~@/assets/imagenes/file-grande.png" alt="">
+                    <img src="~@/assets/imagenes/file-grande.png">
                     <a class="boton" href="">LEARN MORE</a>
                 </div>
             </div>

@@ -7,16 +7,16 @@
             <p class="logo">Hosting Company</p>
             <!-- BARRA DE NAVEGACION PARA MOBIL -->
            
-            <img src="~@/assets/imagenes/menu.png" @click="show = !show" class="menu-icon" alt="">
+            <img src="~@/assets/imagenes/menu.png"   @click="mostrar()" class="menu-icon" alt="">
                 
-                <nav v-show="show">
-                    <ul>
-                        <li><a @click="show = !show" href=".menu">Home</a></li>
-                        <li><a @click="show = !show" href="#servicios">Services</a></li>
-                        <li><a @click="show = !show" href="#features">Features</a></li>
-                        <li><a @click="show = !show" href="#pricing">Princing</a></li>
-                        <li><a @click="show = !show" href="#file">File Managment</a></li>
-                        <li><a @click="show = !show" href="#testimonios">Testimonials</a></li>
+                <nav v-show="ver" id="nav">
+                    <ul class="lista" >
+                        <li><a  href="#menu">Home</a></li>
+                        <li><a  href="#servicios">Services</a></li>
+                        <li><a  href="#features">Features</a></li>
+                        <li><a  href="#pricing">Princing</a></li>
+                        <li><a  href="#file">File Managment</a></li>
+                        <li><a  href="#testimonios">Testimonials</a></li>
                         
                     </ul>
                 </nav>
@@ -24,7 +24,7 @@
             </div>
         </div>
         
-        <div class="contenedor">
+        <div class="contenedor"  id="menu">
             <div class="contenedor-inicio">
                 <div class="titular">
                     <h1>Premium Hosting Services</h1>
@@ -43,14 +43,18 @@
 </template>
 
 <script>
-
 export default {
-  
-  data(){
-    return{
-       show: false
+    data:function() {
+        return {
+            ver:true
+        }
+    },
+    methods:{
+        mostrar(){
+            this.ver = !this.ver;
+            console.log(this.ver);
+        }
     }
-  }
 }
 </script>
 
@@ -83,16 +87,22 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+.menu-icon{
+    display: none;
+}
 header .logo{
     font-size: 23px;
     font-weight: bold;
     color: black;
     
 }
+
+
 nav ul li{
     display: inline-block;
     margin: 0 20px;
-}
+    
+} 
 nav ul li a{
     text-decoration: none;
     color: black;
@@ -141,12 +151,18 @@ header .imagen .img2 {
         left:0;
         background: #232220;
         width:100%;
-        /* display: none; */
+       /* display: none;  */
     }
-    nav ul li {
+      nav .lista {
+        flex-direction:column;
+        display: flex;
+        margin:0;
+        padding: 0;
+    }
+    /* nav ul li {
         display:block ;
         margin:23px 20px;
-    }
+    } */
     nav ul li a {
         color:#fff;
     }
