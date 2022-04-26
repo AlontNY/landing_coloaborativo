@@ -9,31 +9,6 @@
             <li><span class="punto">.</span><span class="dominio">gov</span><span class="anio">$8.99/yr</span></li>
         </ul>
      </main>
-
-     <section>
-          <code v-if="datos">
-
-            <code v-for="(dato,index_) in datos.forms" :key="index_">
-                {{dato.name}}
-            </code>
-            
-            <hr>
-
-            <code v-for="(indice,ind) in datos.game_indices" :key="ind">
-            {{indice.version.name}}
-            </code>
-            
-            <hr>
-       
-            <!-- {{datos.abilities}} -->
-            <code v-for="(date,i) in datos.abilities" :key="i">
-                <p>{{date.ability.name}}</p>
-            </code>
-            
-        </code>
-        
-        <!-- <button class="btn btn-primary" @click="activador">activar</button> -->
-     </section>
     
     <section id="servicios">
             <div class="contenedor">
@@ -320,29 +295,6 @@
     </section>
     </div>
 </template>
-
-<script>
-
-export default({
-   data: () => {
-        return{
-            datos: null
-        }
-    },
-    methods:{
-        activador: async function(){
-            await axios.get("https://pokeapi.co/api/v2/pokemon/ditto").then(result =>{
-                this.datos = result.data;
-            })        
-        }
-
-    },
-    created(){
-        this.activador();
-    }
-})
-</script>
-
 
 
 <style scoped>
